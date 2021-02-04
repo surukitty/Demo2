@@ -1,0 +1,117 @@
+<!DOCtype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Star-rating</title>
+        <style type="text/css">
+        section{
+            width:620px;
+            height:300px;
+            margin:200px;
+            position:relative;
+            direction:rtl;
+        }
+        input{
+            display:none;
+        }
+        label{
+            display:inline-block;
+            width:100px;
+            height:100px;
+            margin:10px;
+            margin-top:80px;
+            background:#f5f5f5;
+            clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);
+        }
+        label:hover,
+        label:hover ~ label,
+        input:checked ~ label{
+           background:gold;
+           cursor:pointer;
+        }
+        p:before,
+        p:after{
+            content:"Hover to rate yor experience";
+         position:absolute;
+         top:0px;
+         width:90%;
+         left:5%;
+         height:30px;
+         font-size:25px;
+         font-weight:bold;
+         color:#6e6e6e;
+         text-align:center;
+        }
+        p:after{
+            color:black;
+            content:'';
+            font-size:18px;
+            transition:0.5 sec ease in;
+            top:200px;
+        }
+        label:nth-of-type(5):hover ~ p:before{
+         Content:"You desire to rate:Poor";
+         color:rgb(0, 204, 255);
+
+        }
+        label:nth-of-type(4):hover ~ p:before{
+         Content:"You desire to rate:Good";
+         color:rgb(0, 204, 255);;
+         
+        }
+        label:nth-of-type(3):hover ~ p:before{
+         Content:"You desire to rate:very good";
+         color:rgb(0, 204, 255);;
+         
+        }
+        label:nth-of-type(2):hover ~ p:before{
+         Content:"You desire to rate:Best";
+         color:rgb(0, 204, 255);;
+         
+        }
+        label:nth-of-type(1):hover ~ p:before{
+         Content:"You desire to rate:Excellent";
+         color:gold;
+         
+        }
+
+        #v:checked ~ p:after{
+            content:"(You have given rate as poor)";
+            top:250px;
+        }
+        #f:checked ~ p:after{
+            content:"(You have given rating as Good)";
+            top:250px;
+        }
+        #r:checked ~ p:after{
+            content:"(You have given rating as very good)";
+            top:250px;
+        }
+        #t:checked ~ p:after{
+            content:"(You have given rating as Best)";
+            top:250px;
+        }
+        #o:checked ~ p:after{
+            content:"(You have given rating as Excellent)";
+            top:250px;
+        }
+        
+
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <section>
+            <input type="radio" id="o" name="rate"><label for="o"></label>
+            <input type="radio" id="t" name="rate"><label for="t"></label>
+            <input type="radio" id="r" name="rate"><label for="r"></label>
+            <input type="radio" id="f" name="rate"><label for="f"></label>
+            <input type="radio" id="v" name="rate"><label for="v"></label>
+            <p></p>
+        </section>
+    </body>
+</html>

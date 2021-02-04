@@ -1,0 +1,78 @@
+
+<div class="row">
+    <div class="col-md-12">
+        <img src="" alt="" class="img-responsive">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h1>Weekly Special Dishes</h1>
+    </div>
+</div>
+<div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+    <button class="btn btn-outline-primary mr-2" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()">Weekly Menu Timings</button><button type="button" class="btn btn-outline-info" style="text-emphasis-color: white;"><a href="assets/star.html" >Rate Our Weekly Dishes</a></button>
+    <div ngbDropdownMenu aria-labelledby="dropdownManual">
+      <button ngbDropdownItem><h6>Mon 10:00AM-1:00PM</h6></button>
+      <button ngbDropdownItem><h6>Tue 9:00AM-11:00PM</h6></button>
+      <button ngbDropdownItem><h6>Wed 10:00AM-1:00PM</h6></button>
+      <button ngbDropdownItem><h6>Thu 10:00AM-1:00PM</h6></button>
+      <button ngbDropdownItem><h6>Fri  11:00AM-1:00PM</h6></button>
+    </div>
+  </div>
+  
+  
+<div class="row">
+    <div class="col-md-12">
+        <h4>Monday</h4>
+        <img src="assets/dosa.jpg" alt="" width="90" height="50" class="image-responsive">
+        <button class="btn btn-info" style="float: right;" value="Dosa" (click)="onAddCart($event)" >Add to cart</button><br>
+        
+        <h5>Dosa</h5>
+    </div>
+</div>
+<hr><hr>
+<div class="row">
+    <div class="col-md-12">
+        <h4>Tuesday</h4>
+        <img src="assets/vadapav.jpg" alt="" width="90" height="50" class="image-responsive">
+        <button class="btn btn-info" style="float: right;" value="Vadapav" (click)="onAddCart($event)" >Add to cart</button><br>
+        
+        <h5>Vadapav</h5>
+    </div>
+</div>
+<hr><hr>
+<div class="row">
+    <div class="col-md-12">
+        <h4>Wednesday</h4>
+        <img src="assets/noodles.jpg" alt="" width="90" height="50" class="image-responsive">
+        <button class="btn btn-info" style="float: right;" value="Noodles" (click)="onAddCart($event)" >Add to cart</button><br>
+        
+        <h5>Noodles</h5>
+        
+    </div>
+</div>
+<hr><hr>
+<div class="row">
+    <div class="col-md-12">
+        <h4>Thurseday</h4>
+        <img src="assets/dhokla.jpg" alt="" width="90" height="50" class="image-responsive">
+        <button class="btn btn-info" style="float: right;" value="Dhokla" (click)="onAddCart($event)" >Add to cart</button><br>
+        
+        <h5>Dhokla</h5>
+    </div>
+</div>
+<hr>
+<hr>
+<div class="row">
+    <div class="col-md-12">
+        <h4>Friday</h4>
+        <img src="assets/pizza.jpg" alt="" width="90" height="50" class="image-responsive">
+        <button class="btn btn-info" style="float: right;" value="Pizza" (click)="onAddCart($event)" >Add to cart</button><br>
+        
+        <h5>Pizza</h5>
+        <button class="btn btn-info">Added items</button><h6><p>{{message}}</p></h6>
+        
+    </div>
+</div>
+
+

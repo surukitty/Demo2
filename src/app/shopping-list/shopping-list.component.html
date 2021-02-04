@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm" style="background-color:lightgrey;">
+        <h4>Our Branches</h4>
+        <div class="row">
+            <div class="col-md-10">
+                <app-shopping-list-edit></app-shopping-list-edit>
+        <hr>
+        <ul class="list-group">
+            <a class="list-grp-item"
+             style="cursor:pointer;"
+             *ngFor='let ingredient of ingredient' >
+            <h6> {{ingredient.location}} {{ingredient.no}}</h6>
+            </a>
+        </ul>
+        </div>
+        </div>
+        
+      </div>
+      <div class="col-sm" style="background-color:lightgrey;">
+        <h4>Our Services</h4><hr>
+        <h6>Punjabi Food</h6>
+        <h6>South Indian Food</h6>
+        <h6>Maharashtrian Food</h6>
+        <h6>Italian Food</h6>
+        <h6>Chinese Food</h6>
+      </div>
+      <div class="col-sm"style="background-color:lightgrey;">
+        <h4>Contact Us</h4><hr>
+        <h6>+91 3582583940</h6>
+        <h6>+91 7848583655</h6>
+        <h6>snackscorner@gmail.com</h6>
+        <img src="assets/facebook.jpg" alt="" width="40" height="40" class="image-responsive"><h6><a href="https://www.facebook.com/">Facebook</a></h6>
+        
+        
+      </div>
+    </div>
+  </div>
